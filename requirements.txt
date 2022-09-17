@@ -1,0 +1,12 @@
+# method 1 - using wifi_qrcode_generator library
+wifi_qrcode_generator
+
+# method 2 - using segno
+segno              # qr code library
+qrcode-artistic    # helpers to make tweaks to final image
+
+# method 3 - using qrcode
+qrcode[pil]
+# below repos required for png output with `qrcode` lib
+git+https://github.com/ojii/pymaging.git#egg=pymaging
+git+https://github.com/ojii/pymaging-png.git#egg=pymaging-png
