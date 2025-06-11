@@ -2,7 +2,7 @@
 wifi_qrcode_generator
 
 # method 2 - using segno
-segno              # qr code library
+segno              # qr_code_object code library
 qrcode-artistic    # helpers to make tweaks to final image
 matplotlib         # fix pycharm complaints
 

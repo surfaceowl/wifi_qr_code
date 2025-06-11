@@ -1,5 +1,5 @@
 """
-generate wifi qr code
+generate wifi qr_code_object code
 """
 # Import module
 import wifi_qrcode_generator as qr

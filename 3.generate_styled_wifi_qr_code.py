@@ -17,7 +17,7 @@ qr = qrcode.QRCode(box_size=100, error_correction=qrcode.constants.ERROR_CORRECT
 # add wifi data
 # try to use segno to generate data, then pass it back to artistic from qrcode lib
 
-# this attempt works; generates valid qr that attaches to guest network
+# this attempt works; generates valid qr_code_object that attaches to guest network
 from segno import helpers
 ssid="UCSFguest"
 password=""
