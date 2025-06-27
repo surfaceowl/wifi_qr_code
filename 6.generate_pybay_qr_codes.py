@@ -24,7 +24,9 @@ qr_labels_with_url = {"sponsors": "https://pybay.org/sponsors/sponsor-us/",
                       "code_of_conduct":"https://pybay.org/code-of-conduct/",
                       "buy_tickets_pybay_page":"https://pybay.org/attending/",
                       "buy-tickets-pretix": "https://pretix.eu/bapya/pybay-2025/",
-                      "about_our_team": "https://pybay.org/about/"
+                      "about_our_team": "https://pybay.org/about/",
+                      "pycon-2025-youtube": "https://www.youtube.com/watch?v=flnVc2Ke-bw&list=PL2Uw4_HvXqvb98mQjN0-rYQjdDxJ_hcrs",
+                      "pycon-movie-documentary": "https://www.youtube.com/watch?v=pqBqdNIPrbo"
                       }
 
 for qr_target in qr_labels_with_url:
