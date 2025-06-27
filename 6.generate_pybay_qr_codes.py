@@ -10,24 +10,30 @@ from qrcode.image.styles.moduledrawers import GappedSquareModuleDrawer  # Square
 from qrcode.image.styles.colormasks import SolidFillColorMask
 
 pybay_year = "2025"
-qr_labels_with_url = {"sponsors": "https://pybay.org/sponsors/sponsor-us/",
-                      "speakers-call-for-proposals": "https://pybay.org/speaking/call-for-proposals/",
-                      "tickets-on-sale": "https://pretix.eu/bapya/pybay-2025/",
-                      "pybay-linkedin": "https://www.linkedin.com/company/18205092",
-                      "pybay-fosstodon": "https://fosstodon.org/@pybay",
-                      "pybay-bluesky": "https://bsky.app/profile/pybay.bsky.social",
-                      "pybay-youtube": "https://www.youtube.com/c/SFPython",
+qr_labels_with_url = {"sponsors":"https://pybay.org/sponsors/sponsor-us/",
+                      "speakers-call-for-proposals":"https://pybay.org/speaking/call-for-proposals/",
+                      "tickets-on-sale":"https://pretix.eu/bapya/pybay-2025/",
+                      "pybay-linkedin":"https://www.linkedin.com/company/18205092",
+                      "pybay-fosstodon":"https://fosstodon.org/@pybay",
+                      "pybay-bluesky":"https://bsky.app/profile/pybay.bsky.social",
+                      "pybay-youtube":"https://www.youtube.com/c/SFPython",
                       "speakers_call_for_proposals":"https://pybay.org/speaking/call-for-proposals/",
                       "speakers_current":"https://pybay.org/speaking/current-speakers/",
                       "sponsors_current":"https://pybay.org/sponsors/our-sponsors/",
                       "sponsor_us":"https://pybay.org/sponsors/sponsor-us/",
                       "code_of_conduct":"https://pybay.org/code-of-conduct/",
                       "buy_tickets_pybay_page":"https://pybay.org/attending/",
-                      "buy-tickets-pretix": "https://pretix.eu/bapya/pybay-2025/",
-                      "about_our_team": "https://pybay.org/about/",
-                      "pycon-2025-youtube": "https://www.youtube.com/watch?v=flnVc2Ke-bw&list=PL2Uw4_HvXqvb98mQjN0-rYQjdDxJ_hcrs",
-                      "pycon-movie-documentary": "https://www.youtube.com/watch?v=pqBqdNIPrbo"
-                      }
+                      "buy-tickets-pretix":"https://pretix.eu/bapya/pybay-2025/",
+                      "about_our_team":"https://pybay.org/about/",
+                      "pycon-2025-youtube":"https://www.youtube.com/watch?v=flnVc2Ke-bw&list=PL2Uw4_HvXqvb98mQjN0-rYQjdDxJ_hcrs",
+                      "pycon-movie-documentary":"https://www.youtube.com/watch?v=pqBqdNIPrbo",
+                      "pybay-instagram":"https://www.instagram.com/py_bay/",
+                      "pybay-facebook":"https://www.facebook.com/PyBayConf/",
+                      "meetup-bapyacfp-submit-talk-proposal":"https://bit.ly/bapyacfp",
+                      "meetup-sfpython":"https://www.meetup.com/sfpython/",
+                      "meetup-pyninsula":"https://www.meetup.com/pyninsula-python-peninsula-meetup/",
+                      "meetup-baypiggies":"https://www.meetup.com/baypiggies/",
+                      "pybay-twitter-x":"https://x.com/py_bay"}
 
 for qr_target in qr_labels_with_url:
     output_filename = f"pybay_{pybay_year}_{qr_target}_qr_code.png"
