@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# file system info
+*.attrs
+
+# ignore image output to keep repo small
+# Ignore all PNGs anywhere under output_qr_codes (including top-level and subdirectories)
+output_qr_codes/**/*.png
+/.idea/aws.xml

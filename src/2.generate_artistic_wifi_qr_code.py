@@ -4,34 +4,41 @@ https://segno.readthedocs.io/en/latest/index.html
 """
 import segno
 from segno import helpers
+from project_utils import get_output_path, resolve_input_art_path
 
 # Create a WIFI config with min. error level "L" or better
-ssid="TBD"
-password="TBD"
-security_standard="WPA"
+ssid = "TBD"
+password = "TBD"
+security_standard = "WPA"
 wifi_config = helpers.make_wifi_data(ssid=ssid, password=password, security=security_standard, hidden=False)
 qrcode1 = qrcode2 = segno.make(wifi_config, error='m')
 
 # send to artistic config engine
-qrcode1.to_artistic(background='surfaceowl_logo_basic_bw.png',
-                   target='guest_wifi_artistic_qr_v01.png',
+background = resolve_input_art_path('surfaceowl-logo-basic-bw.png')
+
+target1 = get_output_path(None, 'guest-wifi-artistic-qr-v01')
+qrcode1.to_artistic(background=str(background),
+                   target=str(target1),
                    border=0,
                    scale=10,
                    light=None,
                    dark='darkblue', data_dark='steelblue')
 
-qrcode2.save(out='guest_wifi_artistic_qr_v02.png',
+out2 = get_output_path(None, 'guest-wifi-artistic-qr-v02')
+qrcode2.save(out=str(out2),
              border=0,
              scale=10,
              dark='darkblue', data_dark='steelblue')
 
-qrcode1.to_artistic(background='surfaceowl_logo_basic_bw.png',
-                   target='guest_wifi_artistic_qr_v03.png',
+target3 = get_output_path(None, 'guest-wifi-artistic-qr-v03')
+qrcode1.to_artistic(background=str(background),
+                   target=str(target3),
                    border=0,
                    scale=10,
                    light=None)
 
-qrcode2.save(out='guest_wifi_artistic_qr_v04.png',
+out4 = get_output_path(None, 'guest-wifi-artistic-qr-v04')
+qrcode2.save(out=str(out4),
              border=0,
              scale=10)
 

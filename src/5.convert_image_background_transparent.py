@@ -1,6 +1,6 @@
 import segno
 from PIL import Image
-input_file_original = "./baypiggies_logo_with_text_wide.png"
+input_file_original = "../images_input_art/baypiggies_logo_with_text_wide.png"
 
 # Open the PNG file using Pillow
 with Image.open(input_file_original) as img:
