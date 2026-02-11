@@ -12,5 +12,5 @@ qrcode[pil]==8.2
 git+https://github.com/ojii/pymaging.git#egg=pymaging
 git+https://github.com/ojii/pymaging-png.git#egg=pymaging-png
 
-pillow==11.3.0
+pillow==12.1.1
 plotly    # via pycharm; just get latest version
